@@ -47,7 +47,7 @@
 
 h1 {
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 55px;
     font-weight: 700;
     line-height: 65px;
@@ -58,7 +58,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -75,3 +75,51 @@ h2 {
     display: block;
 }
 
+/* dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    color: #8e20a9;
+    font-size: 16px;
+}
+
+.menu button {
+    padding: 30px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    background: none;
+    position: relative;
+}
+
+.menu button::after {
+    content: "";
+    background-image: url("images/down-arrow.png");
+    background-size: 17.5px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 100%;
+    width: 20px;
+    height: 12px;
+}
